@@ -1,0 +1,258 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#">
+  <sbol:ModuleDefinition rdf:about="http://icos.ncl.ac.uk/celement/celementmodule">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule"/>
+    <sbol:displayId>celementmodule</sbol:displayId>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/ptetr1">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/ptetr1"/>
+        <sbol:displayId>ptetr1</sbol:displayId>
+        <sbol:definition rdf:resource="http://icos.ncl.ac.uk/celement/ptetr1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/tetrprotein">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrprotein"/>
+        <sbol:displayId>tetrprotein</sbol:displayId>
+        <sbol:definition rdf:resource="http://icos.ncl.ac.uk/celement/tetrprotein"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:functionalComponent>
+      <sbol:FunctionalComponent rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/tetr1">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetr1"/>
+        <sbol:displayId>tetr1</sbol:displayId>
+        <sbol:definition rdf:resource="http://icos.ncl.ac.uk/celement/tetr1"/>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:direction rdf:resource="http://sbols.org/v2#inout"/>
+      </sbol:FunctionalComponent>
+    </sbol:functionalComponent>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteinrepressesptetr1">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteinrepressesptetr1"/>
+        <sbol:displayId>tetrproteinrepressesptetr1</sbol:displayId>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000169"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteinrepressesptetr1/tf_participation">
+            <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteinrepressesptetr1/tf_participation"/>
+            <sbol:displayId>tf_participation</sbol:displayId>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000020"/>
+            <sbol:participant rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrprotein"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteinrepressesptetr1/promoter_participation">
+            <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteinrepressesptetr1/promoter_participation"/>
+            <sbol:displayId>promoter_participation</sbol:displayId>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000598"/>
+            <sbol:participant rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/ptetr1"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+    <sbol:interaction>
+      <sbol:Interaction rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteintranslation">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteintranslation"/>
+        <sbol:displayId>tetrproteintranslation</sbol:displayId>
+        <sbol:type rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000184"/>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteintranslation/tf_participation">
+            <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteintranslation/tf_participation"/>
+            <sbol:displayId>tf_participation</sbol:displayId>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000011"/>
+            <sbol:participant rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrprotein"/>
+          </sbol:Participation>
+        </sbol:participation>
+        <sbol:participation>
+          <sbol:Participation rdf:about="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteintranslation/cds_participation">
+            <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetrproteintranslation/cds_participation"/>
+            <sbol:displayId>cds_participation</sbol:displayId>
+            <sbol:role rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000019"/>
+            <sbol:participant rdf:resource="http://icos.ncl.ac.uk/celement/celementmodule/tetr1"/>
+          </sbol:Participation>
+        </sbol:participation>
+      </sbol:Interaction>
+    </sbol:interaction>
+  </sbol:ModuleDefinition>
+  <sbol:ComponentDefinition rdf:about="http://icos.ncl.ac.uk/celement/ter1">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/ter1"/>
+    <sbol:displayId>ter1</sbol:displayId>
+    <dcterms:title>ter1</dcterms:title>
+    <dcterms:description>ter1 terminator</dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+    <sbol:sequence rdf:resource="http://icos.ncl.ac.uk/celement/ter1_seq_seq"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://icos.ncl.ac.uk/celement/rbs1">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/rbs1"/>
+    <sbol:displayId>rbs1</sbol:displayId>
+    <dcterms:title>RBS1</dcterms:title>
+    <dcterms:description>Ribosome Binding Site 1</dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:sequence rdf:resource="http://icos.ncl.ac.uk/celement/rbs1_seq_seq"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://icos.ncl.ac.uk/celement/tetrprotein">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/tetrprotein"/>
+    <sbol:displayId>tetrprotein</sbol:displayId>
+    <dcterms:title>TetR</dcterms:title>
+    <dcterms:description>TetR protein</dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#Protein"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://icos.ncl.ac.uk/celement/ptetr1">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/ptetr1"/>
+    <sbol:displayId>ptetr1</sbol:displayId>
+    <dcterms:title>pTetR1</dcterms:title>
+    <dcterms:description>pTetR1 promoter</dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:sequence rdf:resource="http://icos.ncl.ac.uk/celement/ptetr1_seq_seq"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://icos.ncl.ac.uk/celement/tetr1">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/tetr1"/>
+    <sbol:displayId>tetr1</sbol:displayId>
+    <dcterms:title>tetR</dcterms:title>
+    <dcterms:description>tetR coding sequence</dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000316"/>
+    <sbol:sequence rdf:resource="http://icos.ncl.ac.uk/celement/tetr1_seq_seq"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="http://icos.ncl.ac.uk/celement/celement">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement"/>
+    <sbol:displayId>celement</sbol:displayId>
+    <dcterms:title>celement</dcterms:title>
+    <dcterms:description>C-element design</dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000280"/>
+    <sbol:component>
+      <sbol:Component rdf:about="http://icos.ncl.ac.uk/celement/celement/celement_ter1">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/celement_ter1"/>
+        <sbol:displayId>celement_ter1</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://icos.ncl.ac.uk/celement/ter1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://icos.ncl.ac.uk/celement/celement/celement_rbs1">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/celement_rbs1"/>
+        <sbol:displayId>celement_rbs1</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://icos.ncl.ac.uk/celement/rbs1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://icos.ncl.ac.uk/celement/celement/celement_tetr1">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/celement_tetr1"/>
+        <sbol:displayId>celement_tetr1</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://icos.ncl.ac.uk/celement/tetr1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="http://icos.ncl.ac.uk/celement/celement/celement_ptetr1">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/celement_ptetr1"/>
+        <sbol:displayId>celement_ptetr1</sbol:displayId>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="http://icos.ncl.ac.uk/celement/ptetr1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://icos.ncl.ac.uk/celement/celement/anno13_15">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/anno13_15"/>
+        <sbol:displayId>anno13_15</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="http://icos.ncl.ac.uk/celement/celement/anno13_15/location13_15">
+            <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/anno13_15/location13_15"/>
+            <sbol:displayId>location13_15</sbol:displayId>
+            <sbol:start>13</sbol:start>
+            <sbol:end>15</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="http://icos.ncl.ac.uk/celement/celement/celement_tetr1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://icos.ncl.ac.uk/celement/celement/anno1_3">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/anno1_3"/>
+        <sbol:displayId>anno1_3</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="http://icos.ncl.ac.uk/celement/celement/anno1_3/location1_3">
+            <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/anno1_3/location1_3"/>
+            <sbol:displayId>location1_3</sbol:displayId>
+            <sbol:start>1</sbol:start>
+            <sbol:end>3</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="http://icos.ncl.ac.uk/celement/celement/celement_ptetr1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://icos.ncl.ac.uk/celement/celement/anno4_12">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/anno4_12"/>
+        <sbol:displayId>anno4_12</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="http://icos.ncl.ac.uk/celement/celement/anno4_12/location4_12">
+            <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/anno4_12/location4_12"/>
+            <sbol:displayId>location4_12</sbol:displayId>
+            <sbol:start>4</sbol:start>
+            <sbol:end>12</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="http://icos.ncl.ac.uk/celement/celement/celement_rbs1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="http://icos.ncl.ac.uk/celement/celement/anno16_19">
+        <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/anno16_19"/>
+        <sbol:displayId>anno16_19</sbol:displayId>
+        <sbol:location>
+          <sbol:Range rdf:about="http://icos.ncl.ac.uk/celement/celement/anno16_19/location16_19">
+            <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/celement/anno16_19/location16_19"/>
+            <sbol:displayId>location16_19</sbol:displayId>
+            <sbol:start>16</sbol:start>
+            <sbol:end>19</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="http://icos.ncl.ac.uk/celement/celement/celement_ter1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequence rdf:resource="http://icos.ncl.ac.uk/celement/design_seq_seq"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="http://icos.ncl.ac.uk/celement/tetr1_seq_seq">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/tetr1_seq_seq"/>
+    <sbol:displayId>tetr1_seq_seq</sbol:displayId>
+    <sbol:elements>atg</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://icos.ncl.ac.uk/celement/rbs1_seq_seq">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/rbs1_seq_seq"/>
+    <sbol:displayId>rbs1_seq_seq</sbol:displayId>
+    <sbol:elements>aggaggcat</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://icos.ncl.ac.uk/celement/ter1_seq_seq">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/ter1_seq_seq"/>
+    <sbol:displayId>ter1_seq_seq</sbol:displayId>
+    <sbol:elements>tttt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://icos.ncl.ac.uk/celement/design_seq_seq">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/design_seq_seq"/>
+    <sbol:displayId>design_seq_seq</sbol:displayId>
+    <sbol:elements>aaaaggaggcatatgtttt</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="http://icos.ncl.ac.uk/celement/ptetr1_seq_seq">
+    <sbol:persistentIdentity rdf:resource="http://icos.ncl.ac.uk/celement/ptetr1_seq_seq"/>
+    <sbol:displayId>ptetr1_seq_seq</sbol:displayId>
+    <sbol:elements>aaa</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+</rdf:RDF>
